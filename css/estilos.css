@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;800&display=swap');
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 100px 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .barra-navegacion ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .barra-navegacion ul li a {
+    font-size: 10px;
+    padding: 20px;
+    color: brown;
+    display: block;
+    font-weight: 600;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: black;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color:aquamarine;
+}
+
+.borrar{
+    background-color: aquamarine;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: aliceblue;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-contenedor{
+    display: flex;
+}
+
+.header-text{
+    flex-basis: 50%;
+}
+
+.header-text span{
+    font-size: 16px;
+    color: aquamarine;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.header-text h1{
+    font-size: 55px;
+    line-height: 1;
+    color: black;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 45px;
+}
+
+.header-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-img img{
+    width: 400px;
+}
+
+.informacion {
+    width: 70%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 25px 75px;
+    margin-top: -75px;
+    margin-left: 75px;
+    m
+    background-color: aliceblue;
+}
+
+.informacion-contenedor{
+    text-align: center;
+    display: flex; 
+    justify-content:space-between;
+}
+
+.informacion-contenido img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 17px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.informacion-contenido p {
+    margin-bottom: 0;
+}
+
+.producto {
+    padding: 0 0 100px 0;
+    text-align: center;
+}
+
+.producto h2{
+    font-size: 40px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+}
+
+.productos-contenido{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.producto{ 
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+}
+
+.producto img{
+    width: 150px;
+    height: 130px ;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    color: aqua;
+}
+
+.producto p {
+    font-size: 15px;
+    margin: 0;
+    color: black;
+    font-weight: 600;
+}
