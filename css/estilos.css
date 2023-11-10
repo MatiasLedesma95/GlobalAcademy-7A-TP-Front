@@ -22,7 +22,7 @@ img{
 }
 
 .header{
-    background-color: beige;
+    background-color: rgb(207, 207, 163);
     display: flex;
     align-items: center;
     min-height: 70vh;
@@ -51,7 +51,7 @@ img{
     float: left;
 }
 
-.menu .barra-navegacion ul li a {
+.menu .barra-navegacion ul li a{
     font-size: 10px;
     padding: 20px;
     color: brown;
@@ -80,7 +80,7 @@ img{
     display: none;
 }
 
-.submenu:hover #carrito{
+.submenu:hover #carrito {
     display: block;
     position: absolute;
     right: 0;
@@ -114,7 +114,7 @@ th, td{
 }
 
 .header-text{
-    flex-basis: 50%;
+    flex-basis: 25%;
 }
 
 .header-text span{
@@ -130,6 +130,7 @@ th, td{
     line-height: 1;
     color: black;
     margin-bottom: 25px;
+    margin-top: 40px;
 }
 
 p{
@@ -139,8 +140,7 @@ p{
 }
 
 .header-img {
-    flex-basis: 50%;
-    text-align: center;
+width: 95%;
 }
 
 .header-img img{
@@ -152,8 +152,6 @@ p{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 25px 75px;
     margin-top: -75px;
-    margin-left: 75px;
-    m
     background-color: aliceblue;
 }
 
@@ -192,7 +190,7 @@ h3{
 
 .productos-contenido{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
 
@@ -217,4 +215,100 @@ h3{
     margin: 0;
     color: black;
     font-weight: 600;
+}
+
+.boton-2{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: antiquewhite;
+    background-color: brown;
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: antiquewhite;  
+}
+
+.footer-contenedor{
+    display:flex;
+    justify-content: space-between;
+    ;
+}
+
+.link h3{
+    color: brown;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.link a{
+    color: black;
+    font-size: 15px;
+    display: block;
+}
+
+.link a:hover{
+    color: rgb(23, 205, 60);
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .barra-navegacion{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(48, 43, 43);
+        display: none;
+    }
+    .menu .barra-navegacion ul li{
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    #menu:checked ~ .barra-navegacion{
+        display: initial;
+    }
+    .submenu:hover #carrito{
+        min-width: 340px;
+    }
+    .header{
+        min-height: 0vh;
+        padding: 100px 30px;
+    }
+    .header-contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-text{
+        margin-bottom: 20px;
+    }
+    .header-img img{
+        width: 300px;
+    }
+    .informacion{
+        display: none;
+    }
+    .producto{
+        padding: 30px;
+    }
+    .productos-contenido{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer{
+        padding: 30px;
+    }
+    .footer-contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
